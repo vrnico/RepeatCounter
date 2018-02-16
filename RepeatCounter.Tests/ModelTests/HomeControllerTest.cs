@@ -29,7 +29,7 @@ namespace RepeatCounter.Tests
       //act
       var result = indexView.ViewData.Model;
       //assert
-      Assert.IsInstanceOfType(":)", typeof(int));
+      Assert.IsInstanceOfType("Index", typeof(string));
     }
   }
 }

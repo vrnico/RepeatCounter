@@ -16,9 +16,14 @@ namespace RepeatCounter.Controllers
     {
       string inputString = Request.Form["input-string"];
       string findString = Request.Form["find-string"];
+      string lowerInput = inputString.ToLower();
+      RepeatCounterGenerator newRepeatCounterGenerator = new RepeatCounterGenerator(inputString, findString, lowerInput);
+      newRepeatCounterGenerator.LowerCase();
+      newRepeatCounterGenerator.BreakString();
+      int displayString = newRepeatCounterGenerator.RepeatCount();
 
 
-      return View("Index");
+      return View("Index", displayString);
 
     }
   }

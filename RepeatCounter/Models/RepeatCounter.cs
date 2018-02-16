@@ -64,7 +64,6 @@ namespace RepeatCounter.Models
               int valueHolder = inputArray;
               _repeatCount = valueHolder;
           }
-          System.Console.WriteLine(inputArray);
       return _repeatCount;
     }
 

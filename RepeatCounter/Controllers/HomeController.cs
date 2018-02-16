@@ -11,5 +11,15 @@ namespace RepeatCounter.Controllers
       string fakeString = "";
       return View("Index", fakeString);
     }
+    [HttpPost("/result")]
+    public ActionResult Result()
+    {
+      string inputString = Request.Form["input-string"];
+      string findString = Request.Form["find-string"];
+
+
+      return View("Index");
+
+    }
   }
 }

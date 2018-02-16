@@ -13,7 +13,7 @@ namespace RepeatCounter.Tests
     {
       //arrange
       RepeatCounterGenerator newRepeatCounterGenerator = new RepeatCounterGenerator("Buffalo buffalo buffalo buffalo buffalo");
-      string testString = "buffalo";
+      string testString = "Buffalo buffalo buffalo buffalo buffalo";
       //act
       string testInput = newRepeatCounterGenerator.GetInputString();
       //assert

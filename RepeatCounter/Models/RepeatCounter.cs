@@ -15,7 +15,7 @@ namespace RepeatCounter.Models
 
     public string GetInputString()
     {
-      return "";
+      return _inputString;
     }
   }
 }

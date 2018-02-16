@@ -52,8 +52,9 @@ namespace RepeatCounter.Models
           foreach (char findString in _inputString)
           {
               int valueHolder = inputArray;
-              _repeatCount += valueHolder;
+              _repeatCount = valueHolder;
           }
+          System.Console.WriteLine(inputArray);
       return _repeatCount;
     }
 

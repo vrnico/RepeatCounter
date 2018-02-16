@@ -5,5 +5,13 @@ using RepeatCounter.Models;
 
 namespace RepeatCounter.Tests
 {
+  [TestClass]
+  public class RepeatCounterTest
+  {
+    [TestMethod]
+    public void NotATest()
+    {
 
+    }
+  }
 }

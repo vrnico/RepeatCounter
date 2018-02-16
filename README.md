@@ -6,9 +6,8 @@
 
 ## Description
 
-_This is the Epicodus code review project for week 2 of the C# course. Its purpose is to display understanding .Net MVC testing in C#._
+_This is the Epicodus code review project for week 2 of the C# course. Its purpose is to display understanding of .Net MVC testing in C#._
 
-#### _Repeat Counter_
 
 ___
 ### Specifications

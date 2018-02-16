@@ -5,5 +5,11 @@ namespace RepeatCounter.Controllers
 {
   public class HomeController : Controller
   {
+    [HttpGet("/")]
+    public ActionResult Index()
+    {
+      string fakeString = "";
+      return View("Index", fakeString);
+    }
   }
 }

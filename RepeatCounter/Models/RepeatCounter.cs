@@ -22,7 +22,7 @@ namespace RepeatCounter.Models
 
     public string GetFindString()
     {
-      return "";
+      return _findString;
     }
   }
 }

@@ -46,5 +46,17 @@ namespace RepeatCounter.Tests
       newList = newRepeatCounterGenerator.GetCompareList();
       CollectionAssert.AreEqual(newList, test);
     }
+    [TestMethod]
+    public void RepeatCount_GetsCount_ReturnsCount()
+    {
+      //arrange
+      RepeatCounterGenerator newRepeatCounterGenerator = new RepeatCounterGenerator("buffalo buffalo buffalo buffalo", "buffalo");
+      int testInt = 4;
+      //act
+      int testInput = newRepeatCounterGenerator.RepeatCount();
+      //assert
+      Assert.AreEqual(testInt, testInput);
+    }
+
   }
 }

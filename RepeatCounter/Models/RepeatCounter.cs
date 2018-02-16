@@ -10,6 +10,7 @@ namespace RepeatCounter.Models
       private string _inputString;
       private string _findString;
       private List<string> _compareWords = new List<string> {};
+      private int _repeatCount = 0;
 
       public RepeatCounterGenerator(string inputString, string findString)
     {
@@ -42,5 +43,21 @@ namespace RepeatCounter.Models
           _compareWords.Add(words[index]);
       }
     }
+
+
+    public int RepeatCount()
+    {
+      int inputArray = ( _inputString.Length - _inputString.Replace(_findString,"").Length ) / _findString.Length;
+
+          foreach (char findString in _inputString)
+          {
+              int valueHolder = inputArray;
+              _repeatCount += valueHolder;
+          }
+      return _repeatCount;
+    }
+
+
+
   }
 }

@@ -22,9 +22,19 @@ ___
   * Input: "buffalo"
   * Output: "buffalo"
 
-* Counts the number of times search term is repeated in the base text input. `Here we see the number 5 is outputted because our search term _"buffalo"_  appears in the original text 5 times.`
+* Breaks the User's original string into a list of words. `Creates a list of separate words to be compared against.`
+
+  * Input: "Buffalo buffalo buffalo buffalo buffalo"
+  * Output: "buffalo" "buffalo" "buffalo" "buffalo" "buffalo"
+
+* Counts the number of times search term is repeated in the base text input. `Here we see the number 5 is outputted because our search term "buffalo" (emphasized below)  appears in the original text 5 times.`
 
   * Input: "Buffalo buffalo buffalo buffalo buffalo" _"buffalo"_
+  * Output: "5"
+
+* Accommodates conflicting capitalization and is case-_insensitive_ when counting repeated words. `Specific cases are not treated as uncounted words`
+
+  * * Input: "BuFfalo BufFalo bUffalo buFfalo buffAlo" _"bUfFaLo"_
   * Output: "5"
 
 ___

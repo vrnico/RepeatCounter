@@ -1,7 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using RepeatCounter.Models;
-
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace RepeatCounter.Tests
 {
@@ -31,6 +32,19 @@ namespace RepeatCounter.Tests
 
       //assert
       Assert.AreEqual(testString, testInput);
+    }
+
+    [TestMethod]
+    public void BreakString_ReturnNewList()
+    {
+      string testString = "buffalo";
+      string inputString = "buffalo buffalo";
+      List<string> test = new List<string> {"bufalo", "buffalo"};
+      RepeatCounterGenerator newRepeatCounterGenerator = new RepeatCounterGenerator(inputString, testString);
+      newRepeatCounterGenerator.BreakString();
+      List<string> newList = new List<string> {};
+      newList = newRepeatCounterGenerator.GetCompareList();
+      CollectionAssert.AreEqual(newList, test);
     }
   }
 }

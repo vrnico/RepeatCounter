@@ -19,7 +19,7 @@ namespace RepeatCounter.Tests
       ViewResult result = indexView as ViewResult;
 
       //
-      Assert.IsInstanceOfType(result, typeof(ViewResult));
+      Assert.IsInstanceOfType("Index", typeof(ViewResult));
     }
-  }  
+  }
 }

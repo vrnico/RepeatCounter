@@ -50,7 +50,7 @@ namespace RepeatCounter.Tests
     public void RepeatCount_GetsCount_ReturnsCount()
     {
       //arrange
-      RepeatCounterGenerator newRepeatCounterGenerator = new RepeatCounterGenerator("Buffalo buffalo buffalo buffalo", "buffalo", "buffalo buffalo buffalo buffalo");
+      RepeatCounterGenerator newRepeatCounterGenerator = new RepeatCounterGenerator("BUFFalo bUffalo buffalo buffalo", "buffalo", "buffalo buffalo buffalo buffalo");
       int testInt = 4;
       //act
       int testInput = newRepeatCounterGenerator.RepeatCount();

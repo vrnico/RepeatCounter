@@ -12,8 +12,8 @@ namespace RepeatCounter.Tests
     public void GetInputString_GetsString_ReturnsString()
     {
       //arrange
-      RepeatCounterGenerator newRepeatCounterGenerator = new RepeatCounterGenerator("Buffalo buffalo buffalo buffalo buffalo");
-      string testString = "Buffalo buffalo buffalo buffalo buffalo";
+      RepeatCounterGenerator newRepeatCounterGenerator = new RepeatCounterGenerator("B");
+      string testString = "B";
       //act
       string testInput = newRepeatCounterGenerator.GetInputString();
       //assert

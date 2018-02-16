@@ -39,7 +39,7 @@ namespace RepeatCounter.Tests
     {
       string testString = "buffalo";
       string inputString = "buffalo buffalo";
-      List<string> test = new List<string> {"bufalo", "buffalo"};
+      List<string> test = new List<string> {"buffalo", "buffalo"};
       RepeatCounterGenerator newRepeatCounterGenerator = new RepeatCounterGenerator(inputString, testString);
       newRepeatCounterGenerator.BreakString();
       List<string> newList = new List<string> {};

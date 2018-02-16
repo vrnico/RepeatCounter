@@ -39,7 +39,7 @@ namespace RepeatCounter.Models
    {
      string lowerInput = _inputString.ToLower();
 
-     return "";
+     return _lowerInput;
    }
 
 
